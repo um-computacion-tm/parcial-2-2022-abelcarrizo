@@ -1,3 +1,4 @@
+#Abel Carrizo
 import unittest
 from compress import Compress
 
@@ -36,61 +37,69 @@ class TestCompress(unittest.TestCase):
         self.values_5 = {'Contenedores,': 1, 'sistemas': 2, 'de': 3, 'contenerización': 4, 'y': 5, 'orquestadores\nSistemas\nCloud': 6, 'computing,': 7, 'Infraestructura\nContenerización': 8, 'orquestación': 9, 'contenedores\nLos': 10, 'términos': 11, '«contenedor»': 12, '«contenerización»': 13, 'son': 14, 'un': 15, 'préstamo': 16, 'la': 17, 'industria': 18, 'del': 19, 'transporte.': 20, 'Mientras': 21, 'que': 22, 'en': 23, 'transporte': 24, 'los': 25, 'contenedores': 26, 'sirven': 27, 'para': 28, 'separar': 29, 'físicamente': 30, 'diferentes': 31, 'cargas,': 32, 'IT': 33, 'virtuales': 34, 'empaquetan': 35, 'el': 36, 'código,': 37, 'archivos': 38, 'configuración,': 39, 'librerías': 40, 'dependencias': 41, 'las': 42, 'aplicaciones': 43, 'necesitan': 44, 'ejecutarse.': 45, 'Un': 46, 'contenedor': 47, 'es': 48, 'otra': 49, 'forma': 50, 'virtualización,': 51, 'al': 52, 'igual': 53, 'máquinas': 54, 'virtuales,': 55, 'Docker': 56, 'Kubernetes': 57, 'herramientas': 58, 'más': 59, 'populares.\n\nÍndice': 60, 'contenidos\n1': 61, '¿Qué': 62, 'contenedor?\n1.1': 63, '¿Cuál': 64, 'diferencia': 65, 'entre': 66, 'una': 67, 'máquina': 68, 'virtual?\n1.2': 69, 'Ventajas': 70, 'usar': 71, 'contenedores\n1.2.1': 72, 'Portabilidad': 73, 'entornos\n1.2.2': 74, 'Productividad': 75, 'desarrolladores\n1.2.3': 76, 'Eficiencia\n1.3': 77, 'microservicios': 78, 'contenerizados?\n2': 79, 'contenedores?\n2.1': 80, 'contenedores\n3': 81, 'Sistema': 82, 'orquestadores': 83, 'populares\n3.1': 84, 'Kubernetes\n3.2': 85, 'Docker\n3.3': 86, 'Nomad\n3.4': 87, 'Apache': 88, 'Mesos\n4': 89, 'vs': 90, 'Docker\n¿Qué': 91, 'contenedor?\nLos': 92, 'se': 93, 'usan': 94, 'construir,': 95, 'compartir': 96, 'ejecutar': 97, 'aplicaciones.': 98, 'paquete': 99, 'software': 100, 'ligero': 101, 'contiene': 102, 'código': 103, 'resto': 104, 'elementos': 105, 'necesarios': 106, 'aplicación': 107, 'ejecute': 108, 'con': 109, 'rapidez': 110, 'fiabilidad.': 111, 'Los': 112, 'están': 113, 'aislados': 114, 'abstraídos': 115, 'sistema': 116, 'operativo': 117, 'servidor.': 118, 'Esto': 119, 'permite': 120, 'a': 121, 'equipos': 122, 'DevOps': 123, 'desplegar': 124, 'entornos': 125, 'sin': 126, 'problemas.\n\n¿Cuál': 127, 'virtual?\nPor': 128, 'lado,': 129, 'instancia': 130, 'virtualización': 131, 'capaz': 132, 'instancias': 133, 'separadas': 134, 'usando': 135, 'único': 136, 'OS.': 137, 'La': 138, 'contenerizada': 139, 'reconoce': 140, 'como': 141, 'si': 142, 'fuera': 143, 'exclusivamente': 144, 'ella.': 145, 'Al': 146, 'host,': 147, 'mucho': 148, 'ligeros': 149, 'eficientes.': 150, 'Además,': 151, 'también': 152, 'simplifican': 153, 'mantenimiento': 154, 'actualizaciones.\n\nPor': 155, 'otro': 156, 'virtual': 157, 'o': 158, 'VM': 159, 'entorno': 160, 'creado': 161, 'hardware': 162, 'físico': 163, 'mediante': 164, 'hipervisor': 165, 'tiene': 166, 'su': 167, 'propio': 168, 'operativo,': 169, 'CPU,': 170, 'memoria,': 171, 'interfaz': 172, 'red': 173, 'almacenamiento.': 174, 'En': 175, 'nuestro': 176, 'glosario': 177, 'cloud': 178, 'recogemos': 179, 'relacionados': 180, 'computación': 181, 'nube.\n\nVentajas': 182, 'contenedores\nPortabilidad': 183, 'entornos\nLos': 184, 'construidos': 185, 'ejecutarse': 186, 'cualquier': 187, 'entorno;': 188, 'lo': 189, 'reducir': 190, 'riesgo': 191, 'dependencia': 192, 'proveedor.': 193, 'Moverlos': 194, 'servicio': 195, 'fácil.': 196, 'portabilidad': 197, 'posible': 198, 'necesidad': 199, 'reescribir': 200, 'gran': 201, 'cantidad': 202, 'código.\n\nProductividad': 203, 'desarrolladores\nAl': 204, 'estar': 205, 'ser': 206, 'ejecutados': 207, 'entorno,': 208, 'permiten': 209, 'escribir': 210, 'consistente': 211, 'preocuparse': 212, 'por': 213,
                          'posibles': 214, 'problemas': 215, 'compatibilidad.': 216, 'De': 217, 'este': 218, 'modo': 219, 'puede': 220, 'acelerar': 221, 'desarrollo': 222, 'despliegue': 223, 'facilitan': 224, 'cambios': 225, 'actualizaciones': 226, 'paso': 227, 'tiempo.\n\nEficiencia\nAl': 228, 'efímeros,': 229, 'reducen': 230, 'consumo': 231, 'recursos.': 232, 'única': 233, 'múltiples': 234, 'contenedores.\n\n¿Qué': 235, 'contenerizados?\nLos': 236, 'contenerizados': 237, 'ejecutan': 238, 'dentro': 239, 'contenedor,': 240, 'pero': 241, 'pueden': 242, 'desplegarse,': 243, 'actualizarse': 244, 'retirados': 245, 'independiente.': 246, 'Es': 247, 'enfoque': 248, 'arquitectura': 249, 'consiste': 250, 'dividir': 251, 'solución': 252, 'tamaño': 253, 'fragmentos': 254, 'pequeños': 255, 'impulsar': 256, 'aún': 257, 'productividad': 258, 'eficiencia.\n\n¿Qué': 259, 'contenedores?\nLa': 260, 'automatización': 261, 'mayoría': 262, 'operaciones': 263, 'necesarias': 264, 'cargas': 265, 'trabajo': 266, 'servicios': 267, 'contenedores.': 268, 'escala,': 269, 'contenerizadas': 270, 'vuelven': 271, 'difíciles': 272, 'gestionar': 273, 'manualmente': 274, 'porque': 275, 'suelen': 276, 'incluir': 277, 'cientos': 278, 'e': 279, 'incluso': 280, 'miles': 281, 'Así': 282, 'que,': 283, 'esencial': 284, 'complejidad': 285, 'operacional': 286, 'hora': 287, 'ejecutarlos.\n\nVentajas': 288, 'contenedores\nEn': 289, 'resumen,': 290, 'ofrece': 291, 'diversos': 292, 'beneficios:\n\nReduce': 293, 'contenedores.\nMejora': 294, 'seguridad': 295, 'posibilidades': 296, 'cometer': 297, 'errores': 298, 'humanos,': 299, 'gracias': 300, 'automatización.\nPermite': 301, 'escalar': 302, 'reiniciar': 303, 'clústers': 304, 'automáticamente.\nAyuda': 305, 'automatizar': 306, 'parte': 307, 'aprovechar': 308, 'todos': 309, 'beneficios': 310, 'contenedores.\nSistema': 311, 'populares\nEstos': 312, 'algunos': 313, 'populares.\n\nKubernetes\nKubernetes,': 314, 'conocido': 315, 'K8s,': 316, 'orquestador': 317, 'abierto,': 318, 'originalmente': 319, 'diseñado': 320, 'Google.': 321, 'usa': 322, 'despliegue,': 323, 'escalado': 324, 'gestión': 325, 'contenedores.\n\nDesarrollador:': 326, 'Cloud': 327, 'Native': 328, 'Computing': 329, 'Foundation.\n\nLicencia:': 330, 'License': 331, '2.0.\n\nÚltima': 332, 'versión:': 333, '1.22.2.\n\nMás': 334, 'detalles': 335, 'web': 336, 'Kubernetes.\n\nDocker\nDocker': 337, 'plataforma': 338, 'abierto.': 339, 'ordenadores': 340, 'Linux,': 341, 'Windows': 342, 'MacOS,': 343, 'así': 344, 'ubicaciones': 345, '—on-premises,': 346, 'nube': 347, 'pública': 348, 'privada—.': 349, 'incluye': 350, 'motor': 351, 'Docker,': 352, 'Engine,': 353, 'herramienta': 354, 'Swarm.': 355, 'Descubre': 356, 'caso': 357, 'éxito': 358, 'uno': 359, 'nuestros': 360, 'clientes': 361, 'privada.\n\nDesarrollador:': 362, 'Docker.\n\nLicencia:': 363, '20.10.7.\n\nMás': 364, 'Docker.\n\nNomad\nNomad': 365, 'abierto': 366, 'diseñada': 367, 'no': 368, 'contenerizadas.\n\nDesarrollador:': 369, 'HashiCorp.\n\nÚltima': 370, 'Nomad': 371, '1.2.2.\n\nMás': 372, 'Nomad.\n\nApache': 373, 'Mesos\nApache': 374, 'Mesos': 375, 'Mac': 376, 'OS': 377, 'X.': 378, 'Fue': 379, 'desarrollada': 380, 'inicialmente': 381, 'Universidad': 382, 'California': 383, 'Berkeley.': 384, 'nodos': 385, 'ejecuta': 386, 'cada': 387, 'nodo': 388, 'recursos': 389, 'planificar': 390, 'tareas': 391, 'centro': 392, 'datos.\n\nDesarrollador:': 393, 'Software': 394, '1.11.0.\n\nMás': 395, 'Mesos.\n\nKubernetes': 396, 'Docker\nKubernetes': 397, 'contenerización.': 398, 'Por': 399, 'proporciona': 400, 'contenerizados.': 401, 'construir': 402, 'otros': 403, 'No': 404, 'obstante,': 405, 'cuenta': 406, 'equivalente': 407, 'Kubernetes:': 408}
 
+    
     def test_compress_1(self):
         compress = Compress()
         compressed, values = compress.compress(self.text_1)
         self.assertDictEqual(values, self.values_1)
         self.assertListEqual(compressed, self.compressed_1)
-
+        
+    
     def test_uncompress_1(self):
         compress = Compress()
-        self.assertEqual(compress.uncompress(
-            self.compressed_1, self.values_1), self.text_1)
-
+        self.assertEqual(compress.uncompress(self.compressed_1, self.values_1), self.text_1)
+    
+    
     def test_compress_2(self):
         compress = Compress()
         compressed, values = compress.compress(self.text_2)
         self.assertDictEqual(values, self.values_2)
         self.assertListEqual(compressed, self.compressed_2)
 
+    
     def test_uncompress_2(self):
         compress = Compress()
         self.assertEqual(compress.uncompress(
             self.compressed_2, self.values_2), self.text_2)
-
+    
+    
     def test_compress_3(self):
         compress = Compress()
         compressed, values = compress.compress(self.text_3)
         self.assertDictEqual(values, self.values_3)
         self.assertListEqual(compressed, self.compressed_3)
-
+        
+    
     def test_uncompress_3(self):
         compress = Compress()
         self.assertEqual(compress.uncompress(
             self.compressed_3, self.values_3), self.text_3)
-
+    
+    
     def test_compress_4(self):
         compress = Compress()
         compressed, values = compress.compress(self.text_4)
         self.assertDictEqual(values, self.values_4)
         self.assertListEqual(compressed, self.compressed_4)
-
+        
+    
     def test_uncompress_4(self):
         compress = Compress()
         self.assertEqual(compress.uncompress(
             self.compressed_4, self.values_4), self.text_4)
-
+    
+    
     def test_compress_5(self):
         compress = Compress()
         compressed, values = compress.compress(self.text_5)
         self.assertDictEqual(values, self.values_5)
         self.assertListEqual(compressed, self.compressed_5)
-
+        
+    
     def test_uncompress_5(self):
         compress = Compress()
         self.assertEqual(compress.uncompress(
             self.compressed_5, self.values_5), self.text_5)
-
 
 if __name__ == '__main__':
     unittest.main()
